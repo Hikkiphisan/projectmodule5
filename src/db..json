@@ -1,0 +1,12 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "customer": "Nguyễn Văn A",
+      "products": [
+        { "productId": 101, "name": "Laptop", "quantity": 1, "price": 15000000 }
+      ],
+      "date": "2025-02-06"
+    }
+  ]
+}
