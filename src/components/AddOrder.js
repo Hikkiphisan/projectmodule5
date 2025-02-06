@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import orderData from '../data/db.json';
+import axios from 'axios';
 
 const AddOrderForm = () => {
     const navigate = useNavigate();
@@ -32,16 +33,19 @@ const AddOrderForm = () => {
         setProduct({ productId: '', name: '', price: 0, category: '' });
     };
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const updatedOrders = [...orderData, order];
-        await fetch('/data/db.json', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(updatedOrders)
-        });
-        navigate('/');
+        try {
+            const response = await axios.post('http://localhost:3000/orders', order);
+            alert(`Order "${response.data.orderId}" added successfully!`);
+            navigate('/');
+        } catch (error) {
+            console.error("Error while adding order:", error);
+            alert("There was an error adding the order. Please try again later.");
+        }
     };
+
 
     return (
         <div className="p-6">

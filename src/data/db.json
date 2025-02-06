@@ -1,31 +1,56 @@
-[
-  {
-    "orderId": "ORD001",
-    "purchaseDate": "2025-02-01",
-    "totalAmount": 150000,
-    "quantity": 2,
-    "products": [
-      { "productId": "P001", "name": "Điện thoại Samsung Galaxy S21", "price": 50000, "category": "Điện tử" },
-      { "productId": "P002", "name": "Máy giặt LG Inverter 9kg", "price": 100000, "category": "Thiết bị gia dụng" }
-    ]
-  },
-  {
-    "orderId": "ORD002",
-    "purchaseDate": "2025-01-15",
-    "totalAmount": 90000,
-    "quantity": 1,
-    "products": [
-      { "productId": "P003", "name": "Bàn làm việc gỗ tự nhiên", "price": 90000, "category": "Nội thất" }
-    ]
-  },
-  {
-    "orderId": "ORD003",
-    "purchaseDate": "2025-02-05",
-    "totalAmount": 200000,
-    "quantity": 2,
-    "products": [
-      { "productId": "P004", "name": "Laptop Dell XPS 13", "price": 100000, "category": "Điện tử" },
-      { "productId": "P005", "name": "Áo khoác da nam cao cấp", "price": 100000, "category": "Thời trang" }
-    ]
-  }
-]
+ [
+    {
+      "orderId": "ORD001",
+      "purchaseDate": "2025-02-01",
+      "totalAmount": 150000,
+      "quantity": 2,
+      "products": [
+        {
+          "productId": "P001",
+          "name": "Máy điện thoại Samsung Galaxy S21",
+          "price": 50000,
+          "category": "Điện tử"
+        },
+        {
+          "productId": "P002",
+          "name": "Máy giặt LG Inverter 9kg",
+          "price": 100000,
+          "category": "Thiết bị gia dụng"
+        }
+      ]
+    },
+    {
+      "orderId": "ORD002",
+      "purchaseDate": "2025-01-15",
+      "totalAmount": 90000,
+      "quantity": 1,
+      "products": [
+        {
+          "productId": "P003",
+          "name": "Bàn làm việc gỗ tự nhiên",
+          "price": 90000,
+          "category": "Nội thất"
+        }
+      ]
+    },
+    {
+      "orderId": "ORD003",
+      "purchaseDate": "2025-02-05",
+      "totalAmount": 200000,
+      "quantity": 2,
+      "products": [
+        {
+          "productId": "P004",
+          "name": "Laptop Dell XPS 13",
+          "price": 100000,
+          "category": "Điện tử"
+        },
+        {
+          "productId": "P005",
+          "name": "Áo khoác Dell da nam cao cấp",
+          "price": 100000,
+          "category": "Thời trang"
+        }
+      ]
+    }
+  ]
